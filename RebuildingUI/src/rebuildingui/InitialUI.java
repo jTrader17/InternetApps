@@ -86,6 +86,7 @@ public class InitialUI extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         if(sponsRadio.isSelected()){
+            sponsRadio.setSelected(false);
             this.setVisible(false);
             EditSponsorsUI my = new EditSponsorsUI(this);
             my.setVisible(true);
