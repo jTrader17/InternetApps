@@ -1,0 +1,4 @@
+
+
+var el = document.getElementById('footer-content');
+el.innerHTML = '<p id="copyright">2015 | Rebuilding Together Spokane. | Design by Michael Arnold, Jason Renner, Justin Reimer, Jason Trader. | <a id="whitworth" href="http://www.whitworth.edu/Academic/Department/MathComputerScience/">Whitworth University </a></p><div id="footer-pics"><a id="fb" href="https://www.facebook.com/pages/Rebuilding-Together-Spokane/111764545598006"><img src="pics/social_media/fb_blue_25_vivid.png"></a><a id="twitter" href="https://twitter.com/rtspokane"><img src="pics/social_media/twitter_blue_25_vivid.png"></a></div>';

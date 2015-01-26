@@ -1,0 +1,427 @@
+/* Controls the dynamics of the entire HTML section */
+html {
+  height: 100%;
+}
+
+/* Controls our main body section of the page */
+body {
+  background-color: rgba(0,0,0,.75);
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/* - - - - - - - - - - - - - - - - - THIS IS WHERE OUR HEADER BEGINS - - - - - - - --  -- -  -*/
+
+/* This is the area above the content section that contains the menu and logo picture */
+.header {
+  width: 1000px;
+  height: 114px;
+  margin: 0 auto;
+  background-color: #60bb46;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+/* This specifically controls the logo picture div within the header */
+#headerPic {
+  display: inline;
+  height: 114px;
+  width: 225px;
+  border-top-left-radius: 10px;
+}
+
+/* This accesses the logo picture directly */
+#picture {
+  border-top-left-radius: 10px;
+}
+
+/* This is the entire menu */
+ul {
+  width: 808px;
+  height: 84px;
+  text-align: center;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  line-height: 112px;
+  vertical-align: bottom;
+}
+
+/* This controls the list elements inside the overall menu */
+ul li {
+  display: inline;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100px;
+  line-height: 30px;
+}
+
+/* This controls the individual links within the list elements (Home, About, Volunteers, etc.) */
+ul li a {
+  width: 100px;
+  height: 100px;
+  padding: 25px 20px;
+
+}
+
+/* This highlights whichever page you are currently on. */
+.current{
+  background-color: #646464;
+}
+
+/* This controls how the individual elements appear due to being links */
+ul li a:link {
+  line-height: 24px;
+  font-size: 24px;
+  text-decoration: none;
+  color: white;
+  font-family: "nunito";
+  font-weight: bold;
+}
+
+/* This controls how the individual list elements appear after being clicked*/
+a:visited {
+  line-height: 30px;
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+}
+
+/* This controls what happens when you hover over the list elements in the header menu */
+ul li:hover {
+  background-color: #646464;
+}
+
+/* - - - - - - - - - - - - - - - - - THIS IS WHERE OUR HEADER ENDS AND OUR CONTENT BEGINS - - - -  - - - - - - - --  -- -  -*/
+
+
+/* This is the overall space that contains the carousel and article links */
+#content {
+  margin: 0 auto;
+  width: 1000px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding-bottom: 10px;
+}
+
+/* This controls the images within the carousel*/
+.image {
+  height: 500px;
+  max-height: 500px;
+  margin: 0 auto;
+}
+
+/* This is the individual articles that are placed below the carousel */
+.article {
+  width: 310px;
+  height: 400px;
+  display: inline-block;
+  /*float:left;*/
+  margin-top: 20px;
+  margin-left: 4px;
+  padding: 10px;
+  text-align: center;
+  padding-top: 10px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px #888;
+  background-color: white;
+  overflow:hidden;
+}
+
+/* This is specifically referencing the article titles */
+.article-title{
+   font-family: "nunito";
+   font-weight: bolder;
+   color: #60bb46;
+   font-size: 30px;
+}
+
+.article-content{
+  font-size: 18px;
+  font-family: "nunito";
+  color: rgba(0,0,0,.85);
+}
+
+/* This controls what happens when you hover over the individual articles */
+.article:hover{
+  box-shadow: none;
+  background-color: rgba(0,0,0,.75);
+  box-shadow: 5px 5px 10px #888;
+  cursor: pointer;
+}
+
+.article:hover .article-content{
+	color: white;
+}
+
+#articles{
+  text-align: center;
+}
+
+/* This removes the underline from the text within the articles */
+a:link{
+  text-decoration: none;
+}
+
+/* This controls the spacing of the articles. This is telling the 1st and 3rd articles to move away from the middle article */
+#two {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* - - - - - - - - - - - - - - - - - THIS IS WHERE OUR CONTENT ENDS AND OUR FOOTER BEGINS - - - - --  - -- - - -  - - - - - */
+
+/* This is the entire footer section */
+.footer {
+  width: 1000px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 50px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: left;
+  padding-left: 20px;
+  line-height: 50px;
+  margin-bottom: 15px;
+}
+
+/* This is specifically referencing the copyright text */
+#copyright{
+  color: rgba(255,255,255,.6);
+  display: inline-block;
+  font-family: "nunito";
+}
+
+/* This is specifically referencing the "Whitworth University" text */
+#whitworth{
+  font-size: 16px;
+  color: rgba(235,0,0, .9);
+  padding-left: 5px;
+}
+
+#whitworth:hover{
+  text-decoration: underline;
+}
+
+/* This is referencing the social media pictures in the footer */
+#footer-pics{
+  display: inline-block;
+  margin-left: 115px;
+  padding: 0px;
+}
+
+#twitter{
+  margin-left: 10px;
+}
+
+#twitter, #fb{
+  opacity: .4;
+}
+
+#twitter:hover{
+  opacity: 1;
+}
+
+#fb:hover{
+  opacity: 1;
+}
+
+
+/* This makes sure that Internet Explorer doesn't break */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+/* start commented backslash hack \*/
+* html .clearfix {
+  height: 1%;
+}
+
+.clearfix {
+  display: block;
+}
+
+/* close commented backslash hack */
+
+/* - - - - - - - - - - - - - - - - - - THIS IS OUR PROGRAMS PAGE - - - - - - - - - - - - - - - - - - */
+
+/* This is the header on the programs page */
+#programs-header{
+  margin-top: 0px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+/* This is referencing the content section of the Programs page*/
+#programs-content{
+  padding: 40px;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  text-align: left;
+}
+
+/* This is referencing the picture on the Programs page*/
+#programs-image{
+  margin-right: 25px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px #888;
+  display: block;
+}
+
+#programs-description{
+  overflow: auto;
+}
+
+.buttons{
+  text-align: center;
+}
+
+.services-info{
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.services-address{
+  margin-top: 20px;
+  text-align: center;
+  padding: 0px;
+  margin-bottom: 0px;
+}
+
+.services-button{
+  display: inline-block;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #888;
+  width: 300px;
+  text-align: center;
+  font-size: 30px;
+  margin: 0 auto;
+
+}
+
+.application:link, .application:visited{
+  color: #60bb46;
+  font-family: "nunito";
+  font-weight: bold;
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.services-button:hover{
+  background-color: rgba(0,0,0,.7);
+  color: rgba(255,255,255,.9);
+}
+
+.services-button:hover .application{
+  color: rgba(255,255,255,.9);
+}
+
+#button1{
+  margin-right: 50px;
+}
+
+/* ---------------------------------------------------------- THIS IS THE ABOUT US PAGE -----------------------------------------------------------------*/
+
+#AboutUsHeader{
+  margin-top: 0;
+  padding-top: 10px;
+  font-family: 'Arvo', serif;
+  font-weight: bolder;
+  color: rgba(0,0,0, .75);
+  text-align: center;
+}
+
+.About-text{
+  font-family: 'Play', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  color: rgba(0,0,0, .85);
+  font-style: italic;
+}
+
+#BoardHeader{
+  font-family: 'Arvo', serif;
+  font-weight: bolder;
+  color: rgba(0,0,0, .75);
+  text-align: center;
+}
+
+.board-member-bio{
+  text-align: left;
+  margin-left: 10px;
+}
+
+.board-member-pic{
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #888;
+}
+.board-member-name{
+
+  font-family: 'Arvo', serif;
+  font-weight: bolder;
+  color: black;
+  font-size: 18px;
+  text-align: left;
+  margin-left: 10px;
+  display: inline-block;
+  border-bottom: 1px solid black;
+}
+
+#board-members tr:nth-child(even) td:last-of-type{
+  background-color: #ccc;
+
+}
+
+hr{
+  margin: 0;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+  background-color: black;
+  height: 1.5px;
+  border-radius: 2px;
+}
+
+td{
+  border: 1px solid grey;
+  padding: 10px;
+  font-family: 'Arvo', serif;
+}
+
+/* ---------------------------------------------------------------------- THIS IS THE SPONSORS PAGE ---------------------------------------------------------- */
+
+#SponsorsHeader{
+  margin-top: 0;
+  padding-top: 10px;
+  font-family: 'Arvo', serif;
+  font-weight: bolder;
+  color: rgba(0,0,0, .75);
+  text-align: center;
+}
+
+ol li {
+  list-style: none;
+  padding: 10px;
+  text-align: center;
+}
+
+.sponsor-pics{
+  border-radius: 10px;
+}
